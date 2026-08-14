@@ -147,4 +147,4 @@ curated price overrides 校准（2026-06/07 对照官方页验证）。DeepSeek 
 
 ## License
 
-BSD-3-Clause
+MIT

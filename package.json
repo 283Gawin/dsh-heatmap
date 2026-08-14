@@ -85,7 +85,7 @@
     "cordis.patch.yml",
     "README.md"
   ],
-  "license": "BSD-3-Clause",
+  "license": "MIT",
   "keywords": [
     "dsh",
     "dsh-plugin",
