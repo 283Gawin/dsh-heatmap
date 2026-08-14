@@ -7,6 +7,20 @@ DSH Web GUI 左侧栏活动热力图插件：常驻显示近 90 天的活动热�
 
 ![dsh-plugin](https://img.shields.io/badge/dsh-plugin-%230a5cd8)
 
+## 效果图
+
+左侧栏热力图面板（浅色 / 深色模式）：
+
+| 浅色 | 深色 |
+| --- | --- |
+| ![面板（浅色）](assets/panel-light.png) | ![面板（深色）](assets/panel-dark.png) |
+
+设置页「插件」分区中的配置卡片（浅色 / 深色模式）：
+
+| 浅色 | 深色 |
+| --- | --- |
+| ![设置卡片（浅色）](assets/settings-light.png) | ![设置卡片（深色）](assets/settings-dark.png) |
+
 ## 功能
 
 - **近 90 天热力图**（固定窗口）：GitHub 贡献图式网格（周一至周日 × 按周
