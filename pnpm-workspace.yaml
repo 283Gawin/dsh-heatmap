@@ -1,0 +1,7 @@
+packages:
+  - '.'
+
+# pnpm 10 build-script allowlist: esbuild ships a platform binary via
+# postinstall; tsdown depends on it.
+allowBuilds:
+  esbuild: true

@@ -1,0 +1,108 @@
+/* Settings-page card for the activity heatmap.
+   Colors ride the dsh GUI theme tokens (--dsw-alias-*) so light and dark
+   modes both resolve correctly; the fallbacks keep the card usable even
+   when the shell does not expose those variables. */
+
+.card {
+  list-style: none;
+  border: 1px solid var(--dsw-alias-border-l1, var(--panel-border, rgba(128, 128, 128, 0.25)));
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--dsw-alias-bg-layer-1, transparent);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 8px 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  color: var(--dsw-alias-label-primary, var(--text-color, #333));
+}
+
+.headText {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.desc {
+  font-size: 11px;
+  opacity: 0.65;
+}
+
+.chev {
+  opacity: 0.55;
+  font-size: 10px;
+  transition: transform 0.15s;
+}
+
+.chevOpen {
+  transform: rotate(180deg);
+}
+
+.body {
+  padding: 10px;
+  border-top: 1px solid var(--dsw-alias-border-l1, var(--panel-border, rgba(128, 128, 128, 0.2)));
+  color: var(--dsw-alias-label-primary, var(--text-color, #333));
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.save {
+  padding: 4px 14px;
+  font-size: 11px;
+  border-radius: 5px;
+  border: none;
+  background: var(--dsw-alias-brand-primary, #2f6fe4);
+  color: #fff;
+  cursor: pointer;
+}
+
+.save:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.discard {
+  padding: 4px 10px;
+  font-size: 11px;
+  border-radius: 5px;
+  border: 1px solid var(--dsw-alias-border-l2, rgba(128, 128, 128, 0.35));
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.discard:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.failed {
+  margin: 0;
+  font-size: 10px;
+  color: var(--dsw-alias-state-error-primary, #e5484d);
+}
+
+.note {
+  margin: 0;
+  font-size: 11px;
+  opacity: 0.7;
+}
