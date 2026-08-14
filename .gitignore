@@ -1,2 +1,7 @@
+# 依赖与临时文件
 node_modules/
-lib/
+
+# 构建产物保留在仓库中：`dsh plugin add link:<repo>` 直接链接仓库目录，
+# host 端加载 lib/index.js、浏览器端加载 lib/client.js，缺了无法安装使用。
+# （与 dsh-usage-stats / dsh-spend 等已收录插件一致）
+# lib/
