@@ -5,7 +5,7 @@ DSH Web GUI 左侧栏活动热力图插件：常驻显示近 90 天的活动热�
 今日所有会话消耗的 Token 总数、缓存命中率，并按每次调用实际使用的模型
 自动计算花费（USD，可配汇率显示 CNY）。
 
-![dsh-plugin](https://img.shields.io/badge/dsh-plugin-%230a5cd8)
+[![Awesome DSH Plugin](https://awesome-dsh-plugin.com/badge.svg)](https://awesome-dsh-plugin.com) ![dsh-plugin](https://img.shields.io/badge/dsh-plugin-%230a5cd8)
 
 ## 效果图
 
