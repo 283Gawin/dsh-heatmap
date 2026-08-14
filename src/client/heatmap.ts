@@ -37,8 +37,8 @@ function formatTokens(n: number): string {
 }
 
 function formatUsd(n: number): string {
-  if (n === 0) return '$0'
-  if (n < 0.01) return '$' + n.toExponential(1)
+  if (n < 0.001) return '$0'
+  if (n < 0.01) return '$' + n.toFixed(3).replace(/0+$/, '').replace(/\.$/, '')
   if (n < 100) return '$' + n.toFixed(2)
   return '$' + n.toFixed(1)
 }
@@ -319,7 +319,7 @@ export class HeatmapPanel {
     // Stats block
     const today = p.today
     const hitRate = Math.round(today.cacheHitRate * 1000) / 10
-    const cny = today.costUsd > 0 && p.cnyRate > 0 ? ' · ¥' + (today.costUsd * p.cnyRate).toFixed(2) : ''
+    const cny = today.costUsd >= 0.001 && p.cnyRate > 0 ? ' · ¥' + (today.costUsd * p.cnyRate).toFixed(2) : ''
     this.todayEl.replaceChildren(
       statItem('今日 Token', formatTokens(today.tokens)),
       statItem('缓存命中', hitRate + '%'),
